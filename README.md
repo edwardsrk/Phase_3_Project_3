@@ -1,5 +1,6 @@
 # Phase_3_Project_3
 A look into Tanzanian water points through classification
+[tanzanian-flag-graphic](./img/tanzanian-flag-graphic.png)
 
 Presented by: Rachel Edwards, Svitlana Glibova
 
