@@ -3,7 +3,7 @@ A look into Tanzanian water points through classification
 
 
 
-![tanzanian-flag-graphic](./img/tanzanian-flag-graphic.png)
+![longboi](./img/longboi.JPG)
 
 Presented by: Rachel Edwards, Svitlana Glibova
 
