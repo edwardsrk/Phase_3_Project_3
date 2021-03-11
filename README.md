@@ -14,8 +14,8 @@ Our project takes a look at the factors that gp into determinig if water points 
 ## Business Problem
 Over 50% of Tanzania's GDP rely on livestock and agriculture while 80% of employment is directly related to those fields, institutions that need water to produce. These water pumps are used by millions all over Tanzania as you can see in the population chart. The management of these water resources are vital to the citizens of Tanzania, especially in locations that have less functioning pumps than functioning pumps. Our goal is to provied the Ministry with a way to predict whether a certain pump is functioning, while optimizing for the least amount of false positives. False positives, predicting that pump is safe and working when in reality it isn't, could be potentially dangerous to the citizens of Tanzania and costly for the government.
 
-![FunctionByBasin](FunctionByBasin.JPG)
-![PopulationPerBasin](PopulationPerBasin.JPG)
+![FunctionByBasin](./img/FunctionByBasin.JPG)
+![PopulationPerBasin](./img/PopulationPerBasin.JPG)
 
 
 ## Data
@@ -27,12 +27,12 @@ The methods used for this analysis start with exploratory data analysis where we
 
 
 ## Results
-![rf_vanilla](rf_vanilla.png)
-![xgb_vanilla](xgb_vanilla.png)
+![rf_vanilla](./img/rf_vanilla.png)
+![xgb_vanilla](./img/xgb_vanilla.png)
 
 ## Conclusions
-![rf_tuned](rf_tuned.png)
-![xgb_tuned](xgb_tuned.png)
+![rf_tuned](./img/rf_tuned.png)
+![xgb_tuned](./img/xgb_tuned.png)
 
 ### Next Steps
 
