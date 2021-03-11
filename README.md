@@ -24,10 +24,12 @@ The methods used for this analysis start with exploratory data analysis where we
 
 
 ## Results
-
+![rf_vanilla](rf_vanilla.png)
+![xgb_vanilla](xgb_vanilla.png)
 
 ## Conclusions
-
+![rf_tuned](rf_tuned.png)
+![xgb_tuned](xgb_tuned.png)
 
 ### Next Steps
 
