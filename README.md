@@ -43,3 +43,15 @@ The methods used for this analysis start with exploratory data analysis where we
 
 
 ## Repository Structure
+```
+├── data
+├── img
+├── src
+  ├── transformers.py
+  ├── wtpts_env.yml
+├── Phase_3_Project_Rachel-binary.ipynb
+├── Phase_3_Project_Rachel-binary_merged.ipynb
+├── README.md
+├── Tanzanian_Waterpoints.ipynb
+└── svitlana_first_eda.ipynb
+```
