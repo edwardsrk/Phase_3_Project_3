@@ -1,5 +1,10 @@
 from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing  import OneHotEncoder, StandardScaler
 from sklearn.base import BaseEstimator, TransformerMixin
+
+numericals = ['amount_tsh', 'longitude', 'latitude', 'construction_year']
+categoricals = ['region_code', 'scheme_management', 'quality_group', 'quantity_group', 'source', 'extraction_type_class', 'waterpoint_type']
 
 class CustomTransformer(BaseEstimator, TransformerMixin):
     
