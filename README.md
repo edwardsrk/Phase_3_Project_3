@@ -34,7 +34,9 @@ Precision: 0%
 
 XGB Vanilla Model
 ![xgb_vanilla](./img/xgb_vanilla.png)
-
+Accuracy: 78.6%
+Train Recall: 68.7%
+Test Recall: 66.3%
 
 ## Conclusions
 Final Model
@@ -48,7 +50,8 @@ Suggest an update for pump infrastructure
 Suggest cross-regional communication
 
 ## For More Information
-
+For more information on our data, the competition and related topics 
+check out the [Driven Data Website](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
 
 
 ## Repository Structure
