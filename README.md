@@ -12,7 +12,7 @@ Our project takes a look at the factors that gp into determinig if water points 
 
 
 ## Business Problem
-Over 50% of Tanzania's GDP rely on livestock and agriculture while 80% of employment is directly related to those fields, institutions that need water to produce. These water pumps are used by millions all over Tanzania as you can see in the population chart. The management of these water resources are vital to the citizens of Tanzania, especially in locations that have less functioning pumps than functioning pumps. Our goal is to provied the Ministry with a way to predict whether a certain pump is functioning, while optimizing for the least amount of false positives. False positives, predicting that pump is safe and working when in reality it isn't, could be potentially dangerous to the citizens of Tanzania and costly for the government.
+Over 50% of Tanzania's GDP rely on livestock and agriculture while 80% of employment is directly related to those fields, institutions that need water to produce. These water pumps are used by millions all over Tanzania as you can see in the population chart. The management of these water resources are vital to the citizens of Tanzania, especially in locations that have less functioning pumps than functioning pumps. Our goal is to provied the Ministry with a way to predict whether a certain pump needs reapir, while optimizing for the least amount of false negatives. False negative, predicting that pump is safe and working when in reality it isn't, could be potentially dangerous to the citizens of Tanzania and costly for the government.
 
 ![FunctionByBasin](./img/FunctionByBasin.JPG)
 ![PopulationPerBasin](./img/PopulationPerBasin.JPG)
@@ -23,29 +23,62 @@ The data for our project has been collected and curated by [Taarifa](http://taar
 
 
 ## Methods
-The methods used for this analysis start with exploratory data analysis where we look for correlations between the data and target and clean and pre-process our data. We then use folium to produce geographically accurate maps of Tanzania to privide visualizations of the data. We also use statistical modeling to make predictions based on our EDA and an iterative model tuning process.
+The methods used for this analysis start with exploratory data analysis where we look for correlations between the data and target and clean and pre-process our data. We then use folium to produce geographically accurate maps of Tanzania to privide visualizations of the data. We also use statistical modeling to make predictions based on our EDA and an iterative model tuning processas we search for the best recall score.
 
 
 ## Results
-![rf_vanilla](./img/rf_vanilla.png)
+Intital Model
+![initial_model](./img/initial_model.png)
+
+Accuracy: 54.6%
+Precision: 0%
+
+XGB Vanilla Model
 ![xgb_vanilla](./img/xgb_vanilla.png)
 
+Accuracy: 78.6%
+Train Recall: 68.7%
+Test Recall: 66.3%
+
 ## Conclusions
-![rf_tuned](./img/rf_tuned.png)
+Final Model
 ![xgb_tuned](./img/xgb_tuned.png)
 
+XGB Recall: 76.4% train
+	    69.8% test
+
 ### Next Steps
+Continue supporting and tuning our tool for a better model
 
+Suggest an update for pump infrastructure
 
+Suggest cross-regional communication
 
 ## For More Information
+For more information on our data, the competition and related topics check out the [Driven Data Website](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
+For more information on the specific basins mentioned in these projects:
 
+[Pangani_River](https://en.wikipedia.org/wiki/Pangani_River)
 
+[Lake Victoria](https://en.wikipedia.org/wiki/Lake_Victoria)
+
+[Lake_Nyasa](https://en.wikipedia.org/wiki/Lake_Malawi) **sometimes refered to as Lake Malawi*
+
+[Lake Rukwa](https://en.wikipedia.org/wiki/Lake_Rukwa)
+
+[Lake Tanganyika](https://en.wikipedia.org/wiki/Lake_Tanganyika)
+
+[Rufiji River](https://en.wikipedia.org/wiki/Rufiji_River)
+
+[Wami/Ruvu](https://en.wikipedia.org/wiki/Wami_River)
+
+[Ruvuma River](https://en.wikipedia.org/wiki/Ruvuma_River)
 
 ## Repository Structure
 ```
 ├── data
 ├── img
+├── notebooks
 ├── src
   ├── transformers.py
   ├── wtpts_env.yml
