@@ -50,16 +50,24 @@ Suggest an update for pump infrastructure
 Suggest cross-regional communication
 
 ## For More Information
-For more information on our data, the competition and related topics 
-check out the [Driven Data Website](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
+For more information on our data, the competition and related topics check out the [Driven Data Website](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
 For more information on the specific basins mentioned in these projects:
+
 [Pangani_River](https://en.wikipedia.org/wiki/Pangani_River)
+
 [Lake Victoria](https://en.wikipedia.org/wiki/Lake_Victoria)
+
 [Lake_Nyasa](https://en.wikipedia.org/wiki/Lake_Malawi) *sometimes refered to as Lake Malawi*
+
+
 [Lake Rukwa](https://en.wikipedia.org/wiki/Lake_Rukwa)
+
 [Lake Tanganyika](https://en.wikipedia.org/wiki/Lake_Tanganyika)
+
 [Rufiji River](https://en.wikipedia.org/wiki/Rufiji_River)
+
 [Wami/Ruvu](https://en.wikipedia.org/wiki/Wami_River)
+
 [Ruvuma River](https://en.wikipedia.org/wiki/Ruvuma_River)
 
 ## Repository Structure
