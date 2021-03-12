@@ -8,19 +8,22 @@ categoricals = ['region_code', 'scheme_management', 'quality_group', 'quantity_g
 
 
 class CustomTransformer(BaseEstimator, TransformerMixin):
-    def __init__(self):
+    def __init__(self, cat_cols = categoricals):
         self.column_trans = None
-#        self.ohe_col_names = None
+        self.ohe_column_names = None
+        
+
     def fit(self, X_t, y_t = None):
         X_ = X_t.copy()
         column_transformer = ColumnTransformer(transformers = [('imputer', SimpleImputer(missing_values = 0.0, strategy = 'most_frequent'), ['construction_year']),
                                                       ('ohe', OneHotEncoder(sparse = False, handle_unknown = 'ignore'), categoricals)],
                                                       n_jobs = -1)
+   
         column_transformer = column_transformer.fit(X_)
-#        self.ohe_col_names = column_transformer.named_transformers_['ohe'].categories_[0]
         self.column_trans = column_transformer
+        self.ohe_column_names = column_transformer.named_transformers_['ohe'].get_feature_names()
+        
         return column_transformer
     def transform(self, X, y = None):
         X_ = self.column_trans.transform(X)
         return X_
-     
