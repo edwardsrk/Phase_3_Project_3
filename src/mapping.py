@@ -1,3 +1,10 @@
+import folium
+
+def namer(name):
+    """takes in a name as a string and returns folium formatted name"""
+    named = "<i>" + name +"</i>"
+    return named
+
 def basin_mapper():
     
     """Takes no argument and plots all 8 basins on folium map"""
