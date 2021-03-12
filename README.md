@@ -1,4 +1,4 @@
-# Phase_3_Project_3
+# Tanzanian Water Well Data
 A look into Tanzanian water points through classification
 
 
