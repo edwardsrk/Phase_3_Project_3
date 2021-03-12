@@ -78,6 +78,7 @@ For more information on the specific basins mentioned in these projects:
 ```
 ├── data
 ├── img
+├── notebooks
 ├── src
   ├── transformers.py
   ├── wtpts_env.yml
