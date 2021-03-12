@@ -1,4 +1,4 @@
-# Phase_3_Project_3
+# Tanzanian Water Well Data
 A look into Tanzanian water points through classification
 
 
@@ -15,7 +15,7 @@ Our project takes a look at the factors that gp into determinig if water points 
 Over 50% of Tanzania's GDP rely on livestock and agriculture while 80% of employment is directly related to those fields, institutions that need water to produce. These water pumps are used by millions all over Tanzania as you can see in the population chart. The management of these water resources are vital to the citizens of Tanzania, especially in locations that have less functioning pumps than functioning pumps. Our goal is to provied the Ministry with a way to predict whether a certain pump needs reapir, while optimizing for the least amount of false negatives. False negative, predicting that pump is safe and working when in reality it isn't, could be potentially dangerous to the citizens of Tanzania and costly for the government.
 
 ![FunctionByBasin](./img/FunctionByBasin.JPG)
-![PopulationPerBasin](./img/PopulationPerBasin.JPG)
+![ordered_pop](./img/ordered_pop.png)
 
 
 ## Data
