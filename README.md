@@ -23,20 +23,23 @@ The data for our project has been collected and curated by [Taarifa](http://taar
 
 
 ## Methods
-The methods used for this analysis start with exploratory data analysis where we look for correlations between the data and target and clean and pre-process our data. We then use folium to produce geographically accurate maps of Tanzania to privide visualizations of the data. We also use statistical modeling to make predictions based on our EDA and an iterative model tuning process.
+The methods used for this analysis start with exploratory data analysis where we look for correlations between the data and target and clean and pre-process our data. We then use folium to produce geographically accurate maps of Tanzania to privide visualizations of the data. We also use statistical modeling to make predictions based on our EDA and an iterative model tuning processas we search for the best recall score.
 
 
 ## Results
-![rf_vanilla](./img/rf_vanilla.png)
+![initial model]()
 ![xgb_vanilla](./img/xgb_vanilla.png)
 
+
 ## Conclusions
-![rf_tuned](./img/rf_tuned.png)
 ![xgb_tuned](./img/xgb_tuned.png)
+XGB Recall: 76.4% train
+	          69.8% tes
 
 ### Next Steps
-
-
+Continue supporting and tuning our tool for a better model
+Suggest an update for pump infrastructure
+Suggest cross-regional communication
 
 ## For More Information
 
