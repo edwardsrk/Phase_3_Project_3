@@ -27,14 +27,20 @@ The methods used for this analysis start with exploratory data analysis where we
 
 
 ## Results
-![initial model]()
+Intital Model
+![initial_model](./img/initial_model.png)
+Accuracy: 54.6%
+Precision: 0%
+
+XGB Vanilla Model
 ![xgb_vanilla](./img/xgb_vanilla.png)
 
 
 ## Conclusions
+Final Model
 ![xgb_tuned](./img/xgb_tuned.png)
 XGB Recall: 76.4% train
-	          69.8% tes
+	          69.8% test
 
 ### Next Steps
 Continue supporting and tuning our tool for a better model
