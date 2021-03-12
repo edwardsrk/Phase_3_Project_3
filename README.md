@@ -29,11 +29,13 @@ The methods used for this analysis start with exploratory data analysis where we
 ## Results
 Intital Model
 ![initial_model](./img/initial_model.png)
+
 Accuracy: 54.6%
 Precision: 0%
 
 XGB Vanilla Model
 ![xgb_vanilla](./img/xgb_vanilla.png)
+
 Accuracy: 78.6%
 Train Recall: 68.7%
 Test Recall: 66.3%
@@ -41,8 +43,9 @@ Test Recall: 66.3%
 ## Conclusions
 Final Model
 ![xgb_tuned](./img/xgb_tuned.png)
+
 XGB Recall: 76.4% train
-	          69.8% test
+	    69.8% test
 
 ### Next Steps
 Continue supporting and tuning our tool for a better model
@@ -57,7 +60,7 @@ For more information on the specific basins mentioned in these projects:
 
 [Lake Victoria](https://en.wikipedia.org/wiki/Lake_Victoria)
 
-[Lake_Nyasa](https://en.wikipedia.org/wiki/Lake_Malawi) *sometimes refered to as Lake Malawi*
+[Lake_Nyasa](https://en.wikipedia.org/wiki/Lake_Malawi) **sometimes refered to as Lake Malawi*
 
 
 [Lake Rukwa](https://en.wikipedia.org/wiki/Lake_Rukwa)
