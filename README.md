@@ -8,11 +8,11 @@ A look into Tanzanian water points through classification
 Presented by: Rachel Edwards, Svitlana Glibova
 
 ## Overview
-Our project takes a look at the factors that gp into determinig if water points in Tanzania are functional or not. We hope to build a tool through statistical analysis and modeling that can accurately predict the functionality of one of these water points. These predictions will help us better serve the needs of the Tanzanian Ministry of Argirculture, Food Securtiy and Cooperatives as the contiune to try and supply Tanzania with clean safe water. 
+Our project takes a look at the factors that gp into determinig if water points in Tanzania are functional or not. We hope to build a tool through statistical analysis and modeling that can accurately predict the functionality of one of these water points. These predictions will help us better serve the needs of the Tanzanian Ministry of Argiculture, Food Securtiy and Cooperatives as they contiune to try and supply Tanzania with clean safe water. 
 
 
 ## Business Problem
-Over 50% of Tanzania's GDP rely on livestock and agriculture while 80% of employment is directly related to those fields, institutions that need water to produce. These water pumps are used by millions all over Tanzania as you can see in the population chart. The management of these water resources are vital to the citizens of Tanzania, especially in locations that have less functioning pumps than functioning pumps. Our goal is to provied the Ministry with a way to predict whether a certain pump needs reapir, while optimizing for the least amount of false negatives. False negative, predicting that pump is safe and working when in reality it isn't, could be potentially dangerous to the citizens of Tanzania and costly for the government.
+Over 50% of Tanzania's GDP rely on livestock and agriculture while 80% of employment is directly related to those fields, which are very reliant on proper water resource management. These water pumps are used by millions all over Tanzania as you can see in the population chart. The management of these water resources is vital to the citizens of Tanzania, especially in locations that have fewer functioning pumps than non-functioning. Our goal is to provide the Ministry with a way to predict whether a certain pump needs repair, while optimizing for the least amount of false negatives. False negative, predicting that pump is safe and working when in reality it isn't, could be potentially dangerous to the citizens of Tanzania and costly for the government.
 
 ![FunctionByBasin](./img/FunctionByBasin.JPG)
 ![ordered_pop](./img/ordered_pop.png)
@@ -31,24 +31,32 @@ Intital Model
 ![initial_model](./img/initial_model.png)
 
 Accuracy: 54.6%
-Precision: 0%
+Recall: 0%
+Precision: undefined  
+The initial dummy model predicted only that the pump is functional due there being more functional pumps in the data set.  
+
 
 XGB Vanilla Model
 ![xgb_vanilla](./img/xgb_vanilla.png)
 
 Accuracy: 78.6%
 Train Recall: 68.7%
-Test Recall: 66.3%
+Test Recall: 66.3%  
+The inital XGB model performed best on this data set, so we proceeded to use hyperparameter tuning to increase the recall with keeping accuracy in mind as well.  
 
 ## Conclusions
 Final Model
 ![xgb_tuned](./img/xgb_tuned.png)
 
-XGB Recall: 76.4% train
-	    69.8% test
+Train Recall: 76.4% 
+Test Recall: 69.8%  
+
+The final model did see some overfitting, which we would like to mitigate with further feature selection and parameter tuning.  
+        
+ 
 
 ### Next Steps
-Continue supporting and tuning our tool for a better model
+Strengthen feature selection for the model and continue tuning hyperparameters to reduce the number of false negative predictions.
 
 Suggest an update for pump infrastructure
 
@@ -58,11 +66,11 @@ Suggest cross-regional communication
 For more information on our data, the competition and related topics check out the [Driven Data Website](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/)
 For more information on the specific basins mentioned in these projects:
 
-[Pangani_River](https://en.wikipedia.org/wiki/Pangani_River)
+[Pangani River](https://en.wikipedia.org/wiki/Pangani_River)
 
 [Lake Victoria](https://en.wikipedia.org/wiki/Lake_Victoria)
 
-[Lake_Nyasa](https://en.wikipedia.org/wiki/Lake_Malawi) **sometimes refered to as Lake Malawi*
+[Lake Nyasa](https://en.wikipedia.org/wiki/Lake_Malawi) **sometimes refered to as Lake Malawi*
 
 [Lake Rukwa](https://en.wikipedia.org/wiki/Lake_Rukwa)
 
@@ -76,7 +84,7 @@ For more information on the specific basins mentioned in these projects:
 
 ## Repository Structure
 ```
-├── data
+├── data - contains information on obtaining the data set
 ├── img
 ├── notebooks
 ├── src
